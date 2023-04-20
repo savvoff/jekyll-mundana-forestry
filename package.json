@@ -1,0 +1,24 @@
+{
+  "name": "jekyll-mundana-forestry",
+  "version": "1.0.0",
+  "description": "Theme designed and developed by [wowthemes](https://github.com/wowthemesnet/mundana-theme-jekyll),",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savvoff/jekyll-mundana-forestry.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savvoff/jekyll-mundana-forestry/issues"
+  },
+  "homepage": "https://github.com/savvoff/jekyll-mundana-forestry#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.6",
+    "tinacms": "^1.4.6"
+  }
+}
