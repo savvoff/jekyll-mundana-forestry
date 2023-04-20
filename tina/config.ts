@@ -3,8 +3,6 @@ import { postFields } from "./templates";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
-// Fix paths
-const base = process.env.BASE || ".";
 
 export default defineConfig({
   branch,
@@ -13,12 +11,12 @@ export default defineConfig({
   client: { skip: true },
   build: {
     outputFolder: "admin",
-    publicFolder: base,
+    publicFolder: ".",
   },
   media: {
     tina: {
       mediaRoot: "",
-      publicFolder: base,
+      publicFolder: ".",
     },
   },
   schema: {
@@ -27,7 +25,7 @@ export default defineConfig({
         format: "yml",
         label: "Configuration",
         name: "configuration",
-        path: base,
+        path: ".",
         ui: {
           allowedActions: {
             create: false,
