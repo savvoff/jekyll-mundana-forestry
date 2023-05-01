@@ -10,7 +10,7 @@ export default defineConfig({
   token: "9ae51c823e39767c79931519b320e092c021c8df", // Get this from tina.io
   client: { skip: true },
   build: {
-    outputFolder: "admin",
+    outputFolder: "jekyll-mundana-forestry/admin",
     publicFolder: ".",
   },
   media: {
