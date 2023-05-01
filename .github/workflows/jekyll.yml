@@ -72,7 +72,7 @@ jobs:
         env:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-        run: yarn tinacms build && ls -la
+        run: yarn tinacms build && cp -r .${{ steps.pages.outputs.base_path }}/* admin && rm -r .${{ steps.pages.outputs.base_path }}
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
